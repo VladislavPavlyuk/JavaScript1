@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Персональные данные</h1>
+    <script>
+        let name;   // ФИО 
+        let gender; // пол 
+        let age;    // возраст 
+        let email;  // e-mail 
+        do {
+            name = prompt("Введите ФИО:", "Иванов Иван Иванович");
+            gender = prompt("Введите пол: ", "м/ж");
+            age = parseInt(prompt("Введите возраст:", "00"));
+            email = prompt("Введите email", "email");
+        }
+        while (confirm("ФИО: " + name + 
+                        "\nпол: " + gender +
+                        "\nвозраст: " + age +
+                        "\nemail: " + email));
+        alert("До встречи! ");
+    </script>
+</body>
+</html>
